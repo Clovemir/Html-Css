@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        @charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    margin: auto;
+    width: 600px;
+    text-align: justify;
+    
+}
+
+header{
+    background-color: rgb(23, 65, 102);
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    background-color: rgb(8, 8, 37);
+    padding: 10px;
+}
+
+nav > a{ 
+    
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    color: brown;
+}
+
+main{
+    background-color: rgb(26, 72, 112);
+    padding: 10px;
+    margin: 10px;
+}
+
+article{
+    background-color: rgb(99, 136, 240);
+    padding: 5px;
+}
+
+article>aside{
+    background-color: rgb(153, 106, 241);
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+footer>p{
+    margin: 0px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="teste.html">Teste</a>
+            <a href="testesite.html">Teste 2</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <P>Esporte Política Tecnologia</P>
+        </section>
+        
+        <section id="noticias">
+            <article>
+                <h2>Noticias do Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit esse sed voluptates reiciendis nihil, deserunt excepturi facere nesciunt eius illo dignissimos numquam sit dolores tempora labore perspiciatis provident corrupti nobis?</p>
+                <aside>
+                    <p>artigo ecrito por josé da silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    
+</body>
+</html>

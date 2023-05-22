@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+    <link rel="shortcut icon" href="dragon.ico" type="image/x-icon">
+    <style>
+        p{
+            font-family: arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu servidor</p>
+
+    <video width="450" controls autoplay loop>
+        <source src="midia/Testevideo1.mp4"  type="video/mp4">
+        <source src="midia/Testevideo.webm" type="video/webm">
+        <source src="midia/testevideo.mp4" type="video/mp4">
+        <p>Se o navegador não tiver compatibilidade com o reprodutor de <br> vídeo, <a href="midia/Testevideo1.mp4" download="midia/Testevideo1.mp4">clique aqui</a> para baixar o arquivo.</p>
+    </video>
+    <p>Se o navegador não tiver compatibilidade com o reprodutor de <br> vídeo, <a href="midia/Testevideo1.mp4" download="midia/Testevideo1.mp4">clique aqui</a> para baixar o arquivo.</p>
+
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <iframe width="450" height="315" src="https://www.youtube.com/embed/P7Cz2IPe5J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</body>
+</html>

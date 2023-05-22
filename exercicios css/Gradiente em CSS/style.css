@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body{                               
+    background-image: linear-gradient( to right, #015958,#023535);
+}
+
+main{
+
+    background-image: linear-gradient(to left,#015958, #023535 );
+    padding: 10px;
+    width: 550px;
+    margin: auto;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+h1{
+    background-image: linear-gradient(to right,#015958, #023535);
+    border-radius: 6px;
+    padding: 7px;
+}

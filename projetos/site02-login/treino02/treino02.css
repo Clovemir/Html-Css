@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor0:#27316B;
+    --cor01:#06166B;
+    --cor02:#0B25B8;
+    --cor03:#0D2EEB;
+    --cor04:#566DEE;
+
+    --font0:'Righteous', sans-serif;
+    --font01:'Noto Sans', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    background-color: var(--cor0);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+}
+
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-img{
+    width: 45vw;
+}
+.left > h1{
+    font-family: var(--font0);
+    color: var(--cor04);
+    font-size: 2.5em;
+    padding-left: 25px;
+    text-shadow: 0px 0px 5px var(--cor03);
+}
+
+.right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cor01);
+    padding: 30px 35px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px var(--cor02);
+}
+.card-login > h1{
+    color: var(--cor04);
+    font-family: var(--font0);
+    margin: 0;
+    padding-bottom: 5px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--cor02);
+    box-shadow: 0px 0px 10px var(--cor0);
+    font-size: 1em;
+}
+
+.textfield > label{
+    color: var(--cor04);
+    font-family: var(--font01);
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    width: 100%;
+    color: var(--cor04);
+    letter-spacing: 2px;
+}
+
+.btn-login{
+    width: 40%;
+    background-color: var(--cor03);
+    padding: 5px 0px;
+    border: none;
+    border-radius: 6px;
+    transition-duration: 0.9s;
+    font-family: var(--font0);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.btn-login:hover{
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    transition-duration: 0.7s;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px var(--cor0);
+}
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    main{
+        flex-direction: column;
+    }
+    .left> h1{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        height: auto;
+    }
+    .left-img{
+        width: 50vh;
+    }
+    .right{
+        width: 100%;
+        height: auto;
+    }
+    .card-login{
+        width: 90%;
+    }
+    .btn-login:hover{
+        margin-top: 0px;
+    }
+}
+
+
