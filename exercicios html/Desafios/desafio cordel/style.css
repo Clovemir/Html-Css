@@ -2,25 +2,26 @@
 
 body{
     margin: 0;
-    font-size: 2em;
+    padding: 0;
 }
     
 header{
     background-color: black;
     text-align: center;
-    height: 25vh;
-    padding-top: 20px;
-    
 }
 
 header > h1{
     color: aliceblue;
     margin: 0;
-    font-size: 60px;
+    padding-top: 50px;
+    font-size: 7vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 header > p{
     color: aliceblue;
+    padding-bottom: 30px;
+    padding-top:20px;
+    margin-top: 0;
 }
 header p > a{
     color: aliceblue;
@@ -33,13 +34,18 @@ header p > a:hover{
     text-decoration: underline;
 }
 
+section{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    line-height: 1.5em;
+    font-size: 3.8vw;
+}
+
 section p{
     font-style: italic;
     padding-left: 20px;
-    padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    line-height: 50px;
 }
 .img1{
     background-image:url(imagens/background001.jpg);
@@ -67,7 +73,7 @@ footer{
 
 footer > p{
     color: white;
-    font-size: 0.6em;
+    font-size: 2vw;
     text-align: center;
     padding:10px;
     font-family: Arial, Helvetica, sans-serif;
