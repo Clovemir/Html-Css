@@ -134,6 +134,11 @@ main{
     main{
         flex-direction: column;
     }
+
+    body{
+        height: 100vh;
+    }
+
     .left-login > h1{
         display: none;
     }
